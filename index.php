@@ -96,8 +96,23 @@ if (count($results->getConnections()) == 0) {
     } else {
       $names = $person->getNames();
       $name = $names[0];
-      printf("%s\n", $name->getDisplayName());
+      printf("Name : %s\n", $name->getDisplayName());
     }
+      
+    /*
+        The Name is only example we can fetch any details which is listed here
+        https://developers.google.com/resources/api-libraries/documentation/people/v1/php/latest/class-Google_Service_PeopleService_Person.html#_getAddresses
+        
+        
+        Example is get address which is below.
+ 
+    if (count($person->getAddresses()) == 0) {
+      print "No names found for this connection\n";
+    } else {
+      $addresses = $person->getAddresses();
+      $address = $addresses[0];
+    }
+    */
   }
 }
 
