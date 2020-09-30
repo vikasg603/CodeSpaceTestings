@@ -109,7 +109,7 @@ $email->setValue('test@test.com');
 $person->setEmailAddresses($email);
 
 $name = new Google_Service_PeopleService_Name();
-$name->setDisplayNameLastFirst('User de Test');
+$name->setDisplayNameLastFirst('Vikas Gupta');
 $person->setNames($name);
 
 $exe = $service->people->createContact($person);
